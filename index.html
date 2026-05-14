@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Happy Birthday Kriti ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    overflow:hidden;
+    background:#000;
+}
+
+.page{
+    position:absolute;
+    width:100%;
+    height:100vh;
+    top:0;
+    left:0;
+    display:none;
+    overflow:hidden;
+}
+
+.active{
+    display:block;
+}
+
+/* ---------------- PAGE 1 ---------------- */
+
+#page1{
+    background:linear-gradient(to top,#ffb6c1,#ffd89b,#87ceeb);
+}
+
+.sun{
+    position:absolute;
+    bottom:60px;
+    left:50%;
+    transform:translateX(-50%);
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background:radial-gradient(circle,#fff799,#ff9800);
+    box-shadow:0 0 80px #ffcc33;
+}
+
+.title1{
+    position:absolute;
+    top:12%;
+    width:100%;
+    text-align:center;
+    font-size:4rem;
+    color:white;
+    text-shadow:0 0 20px #ff1493;
+    animation:glow 2s infinite alternate;
+    z-index:5;
+}
+
+@keyframes glow{
+    from{transform:scale(1);}
+    to{transform:scale(1.05);}
+}
+
+.cloud{
+    position:absolute;
+    width:150px;
+    height:120px;
+    background:pink;
+    top:100px;
+    opacity:0.8;
+    clip-path:path("M75 30 C75 -20 0 -20 0 40 C0 90 75 110 75 110 C75 110 150 90 150 40 C150 -20 75 -20 75 30 Z");
+}
+
+.cloud1{left:10%; animation:float 12s infinite linear;}
+.cloud2{left:40%; top:150px; animation:float 16s infinite linear;}
+.cloud3{left:70%; top:80px; animation:float 18s infinite linear;}
+
+@keyframes float{
+    0%{transform:translateX(0);}
+    50%{transform:translateX(30px);}
+    100%{transform:translateX(0);}
+}
+
+.heart, .flower, .confetti{
+    position:absolute;
+    animation:fall linear infinite;
+}
+
+.heart{
+    color:red;
+    font-size:25px;
+}
+
+.flower{
+    font-size:30px;
+}
+
+.confetti{
+    width:10px;
+    height:10px;
+    background:yellow;
+}
+
+@keyframes fall{
+    0%{
+        transform:translateY(-100px) rotate(0deg);
+        opacity:1;
+    }
+    100%{
+        transform:translateY(110vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+/* ---------------- PAGE 2 ---------------- */
+
+#page2{
+    background:
+    linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+    url('https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    backdrop-filter:brightness(1);
+}
+
+.title2{
+    text-align:center;
+    font-size:4rem;
+    padding-top:40px;
+    color:#ffb6f2;
+    text-shadow:0 0 20px hotpink;
+}
+
+.wish{
+    width:80%;
+    margin:30px auto;
+    text-align:center;
+    font-size:1.4rem;
+    line-height:2;
+    background:rgba(255,255,255,0.1);
+    padding:25px;
+    border-radius:20px;
+    backdrop-filter:blur(5px);
+}
+
+.table{
+    position:absolute;
+    bottom:80px;
+    left:50%;
+    transform:translateX(-50%);
+    width:700px;
+    height:160px;
+    background:#6b3f1d;
+    border-radius:15px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.5);
+}
+
+.table::before{
+    content:"🌸 🌹 🌺 🌷 🌼 🌸 🌹 🌺 🌷 🌼 🌸 🌹 🌺";
+    position:absolute;
+    bottom:-30px;
+    left:0;
+    width:100%;
+    font-size:40px;
+    text-align:center;
+}
+
+.cake{
+    position:absolute;
+    top:-120px;
+    left:50%;
+    transform:translateX(-50%);
+    width:220px;
+    height:120px;
+    background:#5c2e1f;
+    border-radius:15px;
+}
+
+.cake::before{
+    content:"";
+    position:absolute;
+    top:-40px;
+    left:10px;
+    width:200px;
+    height:50px;
+    background:#ffb3d9;
+    border-radius:50%;
+}
+
+.cakeText{
+    position:absolute;
+    width:100%;
+    top:45px;
+    text-align:center;
+    color:white;
+    font-weight:bold;
+}
+
+.candle{
+    position:absolute;
+    width:15px;
+    height:45px;
+    background:white;
+    top:-75px;
+}
+
+.candle::before{
+    content:"";
+    position:absolute;
+    top:-15px;
+    left:-3px;
+    width:20px;
+    height:20px;
+    background:orange;
+    border-radius:50%;
+    box-shadow:0 0 20px yellow;
+}
+
+.c1{left:40px;}
+.c2{left:100px;}
+.c3{left:160px;}
+
+.bouquet{
+    position:absolute;
+    font-size:80px;
+    top:-50px;
+}
+
+.leftBouquet{left:40px;}
+.rightBouquet{right:40px;}
+
+/* ---------------- PAGE 3 ---------------- */
+
+#page3{
+    background:
+    linear-gradient(rgba(255,192,203,0.3),rgba(255,192,203,0.3)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+}
+
+.zoomScene{
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    animation:zoomIn 4s forwards;
+}
+
+@keyframes zoomIn{
+    from{
+        transform:scale(0.6);
+    }
+    to{
+        transform:scale(1.3);
+    }
+}
+
+.bigCake{
+    position:relative;
+    width:350px;
+    height:180px;
+    background:#5c2e1f;
+    border-radius:20px;
+    margin-top:150px;
+}
+
+.bigCake::before{
+    content:"";
+    position:absolute;
+    top:-60px;
+    left:15px;
+    width:320px;
+    height:80px;
+    background:#ffc1da;
+    border-radius:50%;
+}
+
+.cakeTopText{
+    position:absolute;
+    top:60px;
+    width:100%;
+    text-align:center;
+    color:white;
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+.flowerCircle{
+    position:absolute;
+    font-size:50px;
+}
+
+.f1{top:-100px; left:-60px;}
+.f2{top:-100px; right:-60px;}
+.f3{bottom:-60px; left:-50px;}
+.f4{bottom:-60px; right:-50px;}
+
+.knife{
+    position:absolute;
+    width:400px;
+    height:8px;
+    background:silver;
+    top:50%;
+    left:-450px;
+    transform:rotate(15deg);
+    animation:cutCake 3s forwards;
+    animation-delay:4s;
+}
+
+@keyframes cutCake{
+    to{
+        left:50%;
+        transform:translateX(-50%) rotate(15deg);
+    }
+}
+
+.finalWish{
+    position:absolute;
+    inset:0;
+    background:rgba(255,255,255,0.15);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:50px;
+    font-size:2rem;
+    line-height:1.8;
+    color:white;
+    opacity:0;
+    transition:1.5s;
+    backdrop-filter:blur(5px);
+}
+
+.showWish{
+    opacity:1;
+}
+
+.rainHeart{
+    position:absolute;
+    color:red;
+    font-size:25px;
+    animation:heartRain linear infinite;
+}
+
+@keyframes heartRain{
+    from{
+        transform:translateY(-100px);
+    }
+    to{
+        transform:translateY(110vh);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<section id="page1" class="page active">
+
+    <div class="sun"></div>
+
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+
+    <h1 class="title1">Happy Birthday My Princess Kriti ❤️</h1>
+
+</section>
+
+<!-- PAGE 2 -->
+<section id="page2" class="page">
+
+<div class="overlay">
+
+    <h1 class="title2">Happy Birthday My Love Kriti ❤️</h1>
+
+    <div class="wish">
+        My dearest Kriti,<br><br>
+        On your special day, I just want to remind you how precious you are to me.
+        Your smile brightens my darkest days, your love fills my heart with endless happiness,
+        and every moment with you feels magical. I wish your life is always filled with
+        laughter, success, beautiful memories, and endless love. You are my sunshine,
+        my happiness, and my forever favorite person. Happy Birthday my love ❤️
+    </div>
+
+    <div class="table">
+
+        <div class="bouquet leftBouquet">💐</div>
+        <div class="bouquet rightBouquet">💐</div>
+
+        <div class="cake">
+            <div class="candle c1"></div>
+            <div class="candle c2"></div>
+            <div class="candle c3"></div>
+
+            <div class="cakeText">Chocolate Cake 🎂</div>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- PAGE 3 -->
+<section id="page3" class="page">
+
+    <div class="zoomScene">
+
+        <div class="bigCake">
+
+            <div class="cakeTopText">
+                Happy Birthday Kriti Baby ❤️
+            </div>
+
+            <div class="flowerCircle f1">🌹</div>
+            <div class="flowerCircle f2">🌸</div>
+            <div class="flowerCircle f3">🌺</div>
+            <div class="flowerCircle f4">🌷</div>
+
+        </div>
+
+        <div class="knife"></div>
+
+    </div>
+
+    <div class="finalWish" id="finalWish">
+        My sweetest Kriti ❤️<br><br>
+
+        You are the most beautiful chapter of my life.
+        Every heartbeat of mine whispers your name,
+        every smile of mine begins because of you.
+        May your life always shine brighter than the morning sunshine,
+        may happiness follow you forever,
+        and may all your dreams come true.
+        Thank you for filling my life with love, warmth, and magic.
+        I promise to always cherish you, protect you,
+        and love you endlessly.<br><br>
+
+        Happy Birthday My Princess 👑❤️
+    </div>
+
+</section>
+
+<script>
+
+/* PAGE SWITCHING */
+
+setTimeout(()=>{
+    document.getElementById('page1').classList.remove('active');
+    document.getElementById('page2').classList.add('active');
+},8000);
+
+setTimeout(()=>{
+    document.getElementById('page2').classList.remove('active');
+    document.getElementById('page3').classList.add('active');
+},16000);
+
+setTimeout(()=>{
+    document.getElementById('finalWish').classList.add('showWish');
+},23000);
+
+/* FALLING ELEMENTS PAGE 1 */
+
+function createFalling(){
+    const items=["❤️","🌹","🌸","🌺","💖"];
+
+    for(let i=0;i<50;i++){
+
+        let el=document.createElement('div');
+        el.className=Math.random()>0.5?'heart':'flower';
+
+        el.innerHTML=items[Math.floor(Math.random()*items.length)];
+
+        el.style.left=Math.random()*100+'vw';
+        el.style.animationDuration=(5+Math.random()*6)+'s';
+        el.style.fontSize=(20+Math.random()*25)+'px';
+
+        document.getElementById('page1').appendChild(el);
+    }
+
+    for(let i=0;i<80;i++){
+
+        let c=document.createElement('div');
+        c.className='confetti';
+
+        c.style.left=Math.random()*100+'vw';
+        c.style.top='-20px';
+        c.style.background=
+        `hsl(${Math.random()*360},100%,50%)`;
+
+        c.style.animationDuration=(3+Math.random()*4)+'s';
+
+        document.getElementById('page1').appendChild(c);
+    }
+}
+
+createFalling();
+
+/* HEART RAIN FINAL PAGE */
+
+function heartRain(){
+
+    for(let i=0;i<70;i++){
+
+        let h=document.createElement('div');
+        h.className='rainHeart';
+        h.innerHTML='❤️';
+
+        h.style.left=Math.random()*100+'vw';
+        h.style.animationDuration=(4+Math.random()*5)+'s';
+        h.style.fontSize=(20+Math.random()*25)+'px';
+
+        document.getElementById('page3').appendChild(h);
+    }
+}
+
+setTimeout(heartRain,23000);
+
+</script>
+
+</body>
+</html>
